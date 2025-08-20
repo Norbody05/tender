@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tender Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Main container for the layout */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+            gap: 50px;
+        }
+
+        /* Left section for the image */
+        .image-section {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Placeholder for the user's image */
+        .user-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Optional: adds rounded corners to the image */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Right section with text and buttons */
+        .content-section {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        /* Main heading style */
+        .main-heading {
+            font-size: 48px;
+            font-weight: 700;
+            color: #007bff; /* Blue heading color */
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        /* Subheading style */
+        .sub-heading {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        /* Container for the buttons */
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Button styles */
+        .button {
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        .create-account-btn {
+            background-color: #007bff; /* Blue background */
+            color: #fff;
+            border: 2px solid #007bff;
+        }
+
+        .create-account-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3;
+        }
+
+        .login-btn {
+            background-color: transparent;
+            color: #007bff; /* Blue text color */
+            border: 2px solid #007bff; /* Blue border */
+        }
+
+        .login-btn:hover {
+            background-color: #007bff; /* Blue background on hover */
+            color: #fff;
+        }
+
+        /* Media queries for responsiveness on smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .image-section, .content-section {
+                width: 100%;
+                align-items: center;
+            }
+
+            .main-heading {
+                font-size: 32px;
+            }
+
+            .sub-heading {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .button-container {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
+
+            .button {
+                width: 80%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sehemu ya picha. Weka picha yako hapa -->
+        <div class="image-section">
+            <img src="logo (2).png" alt="Placeholder kwa picha" class="user-image">
+        </div>
+
+        <!-- Sehemu ya maandishi na vifungo -->
+        <div class="content-section">
+            <h1 class="main-heading">Welcome to Tender Management System</h1>
+            <p class="sub-heading">Search, Discover, Apply</p>
+            <div class="button-container">
+                <a href="#" class="button create-account-btn">Create Account</a>
+                <a href="login.html" class="button login-btn">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
